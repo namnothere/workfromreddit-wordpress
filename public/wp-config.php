@@ -116,6 +116,8 @@ $table_prefix  = "wp_";
  * language support.
  */
 define("WPLANG", "");
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+define( 'WP_AUTO_UPDATE_CORE', true );
 
 /**
  * AWS Plugin Auth Keys
