@@ -20,7 +20,7 @@
   "require": {
     "php": ">=7.3.0",
     "wordpress": "5.2.4",
-    #"fancyguy/webroot-installer": "1.0.0",
+    "fancyguy/webroot-installer": "1.0.0",
     "vlucas/phpdotenv": "^2.4"
   },
   "extra": {
