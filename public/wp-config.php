@@ -121,7 +121,7 @@ $table_prefix  = "wp_";
 define("WPLANG", "");
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
 define( 'WP_AUTO_UPDATE_CORE', true );
-
+define( 'WP_MEMORY_LIMIT', '64M');
 /**
  * AWS Plugin Auth Keys
  */
