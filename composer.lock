@@ -103,7 +103,7 @@
             "version": "5.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/latest.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/5.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -167,7 +167,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.0"
+        "php": ">=7.3.0"
     },
     "platform-dev": []
 }
