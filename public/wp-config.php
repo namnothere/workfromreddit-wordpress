@@ -59,6 +59,10 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define("FORCE_SSL_ADMIN", getenv("FORCE_SSL_ADMIN") == "true");
 	if ($_SERVER["HTTP_X_FORWARDED_PROTO"] == "https")
 	  $_SERVER["HTTPS"] = "on";
+    
+    define("WP_SITEURL", "http://translatefromreddit.herokuapp.com/wp/");
+    define("WP_HOME", "http://translatefromreddit.herokuapp.com");
+    
 	define("WP_CACHE", getenv("WP_CACHE") == "true");
 
 	/** Disable the built-in cron job */
