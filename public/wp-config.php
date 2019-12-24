@@ -60,8 +60,6 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	if ($_SERVER["HTTP_X_FORWARDED_PROTO"] == "https")
 	  $_SERVER["HTTPS"] = "on";
     
-    define("WP_SITEURL", "http://translatefromreddit.herokuapp.com/wp/");
-    define("WP_HOME", "http://translatefromreddit.herokuapp.com");
     
 	define("WP_CACHE", getenv("WP_CACHE") == "true");
 
