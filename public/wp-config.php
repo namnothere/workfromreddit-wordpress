@@ -30,15 +30,15 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 	/** The name of the database for WordPress */
-	define("DB_NAME", "heroku_e1e6f9d948951ac");
+	define("DB_NAME", trim($url["path"], "/"));
 
 	/** MySQL database username */
-	define("DB_USER", "bb9dcce9a6dd5d");
+	define("DB_USER", trim($url["user"]));
 
 	/** MySQL database password */
-	define("DB_PASSWORD", "9ed8039b");
+	define("DB_PASSWORD", trim($url["pass"]));
 	/** MySQL hostname */
-	define("DB_HOST", "us-cdbr-iron-east-05.cleardb.net");
+	define("DB_HOST", trim($url["host"]));
 
 	/** MySQL database port  */
 	// define("DB_PORT", trim($url["port"]));
