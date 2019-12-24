@@ -13,7 +13,8 @@
         "url": "https://github.com/WordPress/WordPress/archive/5.2.4.zip"
       },
       "require": {
-        "fancyguy/webroot-installer": "^1.0"
+        "fancyguy/webroot-installer": "^1.0",
+        "ext-gd": "*"
       }
     }
   }],
@@ -21,7 +22,8 @@
     "php": ">=7.3.0",
     "wordpress/wordpress": "5.2.4",
     "fancyguy/webroot-installer": "1.0.0",
-    "vlucas/phpdotenv": "^2.4"
+    "vlucas/phpdotenv": "^2.4",
+    "ext-gd": "*"
   },
   "extra": {
     "webroot-dir": "public/wp",
