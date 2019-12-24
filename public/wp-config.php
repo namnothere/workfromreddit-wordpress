@@ -67,7 +67,7 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define("DISABLE_WP_CRON", getenv("DISABLE_WP_CRON") == "true");
 
 	/** Disable automatic updates, they won't survive restarting and scaling dynos */
-	define("AUTOMATIC_UPDATER_DISABLED", true );
+	define("AUTOMATIC_UPDATER_DISABLED", false );
 
 	/**  Prevent File Modifications */
 	define ("DISALLOW_FILE_EDIT", true );
