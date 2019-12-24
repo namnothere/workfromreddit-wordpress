@@ -5,7 +5,7 @@
   }, {
     "type": "package",
     "package": {
-      "name": "wordpress/wordpress",
+      "name": "wordpress",
       "type": "webroot",
       "version": "5.2.4",
       "dist": {
@@ -19,13 +19,13 @@
   }],
   "require": {
     "php": ">=7.3.0",
-    "wordpress/wordpress": "5.2.4",
+    "wordpress": "5.2.4",
     #"fancyguy/webroot-installer": "1.0.0",
     "vlucas/phpdotenv": "^2.4"
   },
   "extra": {
     "webroot-dir": "public/wp",
-    "webroot-package": "wordpress/wordpress",
+    "webroot-package": "wordpress",
     "installer-paths": {
       "public/content/plugins/{$name}/": [
         "type:wordpress-plugin"
