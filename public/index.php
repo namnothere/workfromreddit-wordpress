@@ -5,7 +5,7 @@
  *
  * @package WordPress
  */
-
+<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *
