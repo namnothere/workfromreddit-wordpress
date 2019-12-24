@@ -46,13 +46,16 @@ function anther_setup() {
 		'flex-width'  => true,
 		'header-text' => array( 'site-title', 'site-description' ),
 	) );
-
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+    while(have_posts()):the_post();
+    //display post thumbnail
+        the_post_thumbnail();   //display img tag
+    endwhile;
 
 	// Theme Image Sizes
 	add_image_size( 'anther-featured-square',     650,  650, true );
